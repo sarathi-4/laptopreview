@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="ByteBench provides independent, color-calibrated, lab-tested laptop reviews, thermal benchmarks, battery rundowns, and interactive side-by-side laptop comparisons.">
+  <meta name="keywords"
+    content="laptop reviews 2026, best laptops, gaming laptops, ultrabooks, macbook pro review, laptop comparison tool, battery benchmark">
+  <meta name="author" content="ByteBench Labs">
+  <title>ByteBench — Independent Laptop Reviews & Lab Benchmarks</title>
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300f0ff'><path d='M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z'/></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- Ambient Glow Backgrounds -->
+  <div class="bg-ambient-light" aria-hidden="true">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+    <div class="ambient-blob blob-3"></div>
+  </div>
+
+  <!-- ==========================================================================
+       Header & Navigation Bar
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <!-- Logo -->
+        <a href="#hero" class="logo-wrapper" id="brandLogo">
+          <div class="logo-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+              <line x1="2" y1="20" x2="22" y2="20" />
+              <path d="M12 17v3" />
+            </svg>
+          </div>
+          <span>Byte<span class="text-gradient">Bench</span></span>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#reviews" class="nav-link">Top Reviews</a></li>
+          <li><a href="#quiz" class="nav-link">Laptop Quiz</a></li>
+          <li><a href="#methodology" class="nav-link">Lab Methodology</a></li>
+          <li><a href="#faq" class="nav-link">Buyer FAQ</a></li>
+        </ul>
+
+        <!-- Navigation Right Actions -->
+        <div class="nav-actions">
+          <!-- Search Box -->
+          <div class="header-search">
+            <span class="search-icon-btn" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </span>
+            <input type="text" id="headerSearchInput" class="search-input" placeholder="Search CPU, GPU, brand..."
+              aria-label="Search laptops">
+          </div>
+
+          <!-- Compare Counter Button -->
+          <button class="btn-compare-badge" id="compareBtnBadge" aria-label="Open comparison tool"
+            title="Compare selected laptops">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 3h5v5" />
+              <path d="M4 20L21 3" />
+              <path d="M21 16v5h-5" />
+              <path d="M15 15l6 6" />
+              <path d="M4 4l5 5" />
+            </svg>
+            <span>Compare</span>
+            <span class="compare-count-pill" id="compareCountPill">0</span>
+          </button>
+
+          <!-- Theme Toggle -->
+          <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle dark/light theme"
+            title="Toggle theme">
+            <!-- Injected via JavaScript -->
+          </button>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         Hero Section
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Hero Text -->
+          <div class="hero-content">
+            <div class="hero-pill-badge">
+              <span class="pulse-dot"></span>
+              <span>2026 Lab Tested & Verified</span>
+            </div>
+            <h1 class="hero-title">Precision Benchmarks. <span class="text-gradient">Real-World Heatmaps.</span> Honest
+              Reviews.</h1>
+            <p class="hero-description">
+              We subject laptops to 50+ hours of rigorous stress testing, spectrophotometer color sweeps, and calibrated
+              acoustic measurements so you can choose your next machine with 100% confidence.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#reviews" class="btn-primary" id="heroCtaReviews">
+                <span>Explore Top Reviews</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#quiz" class="btn-secondary" id="heroCtaQuiz">
+                <span>Take Matchmaker Quiz</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Stats Counters -->
+            <div class="hero-stats-row">
+              <div class="stat-item">
+                <h4>180+</h4>
+                <p>Laptops Tested</p>
+              </div>
+              <div class="stat-item">
+                <h4>100%</h4>
+                <p>Independent Lab</p>
+              </div>
+              <div class="stat-item">
+                <h4>22.5h</h4>
+                <p>Max Tested Battery</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Hero Spotlight Card -->
+          <div class="hero-spotlight-card" id="heroSpotlightCard">
+            <div class="spotlight-glass-glow"></div>
+            <div class="spotlight-top-badge">
+              <span class="spotlight-tag">★ Overall Best of 2026</span>
+              <div class="spotlight-score-ring">9.8 <span>/10</span></div>
+            </div>
+            <div class="spotlight-image-box">
+              <img src="assets/images/macbook-pro.jpg" alt="Apple MacBook Pro 16 M4 Max">
+            </div>
+            <div class="spotlight-info">
+              <h3>Apple MacBook Pro 16 (M4 Max)</h3>
+              <p class="spotlight-subtitle">The undisputed power efficiency benchmark champion</p>
+              <div class="spotlight-quick-specs">
+                <span class="spec-chip">16-Core M4 Max</span>
+                <span class="spec-chip">40-Core GPU</span>
+                <span class="spec-chip">21.5h Battery</span>
+                <span class="spec-chip">1600 nits XDR</span>
+              </div>
+            </div>
+            <div class="spotlight-footer">
+              <span class="spotlight-price">$3,499</span>
+              <button class="btn-primary" id="heroSpotlightBtn" style="padding: 0.55rem 1.25rem; font-size: 0.88rem;">
+                Read Full Verdict →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Laptop Matchmaker Quiz Section
+         ========================================================================== -->
+    <section class="quiz-section" id="quiz">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive Matchmaker</span>
+          <h2 class="section-title">Find Your Perfect Laptop in 30 Seconds</h2>
+          <p class="section-subtitle">Answer 3 quick questions about your workflow and budget to get an instant
+            lab-verified recommendation.</p>
+        </div>
+
+        <div class="quiz-container" id="quizContainer">
+          <div class="quiz-progress-bar-container">
+            <div class="quiz-progress-bar" id="quizProgressBar"></div>
+          </div>
+
+          <!-- Question View -->
+          <div id="quizQuestionWrapper">
+            <div class="quiz-step-header">
+              <span class="quiz-step-num" id="quizStepNum">Question 1 of 3</span>
+              <span style="font-size: 0.82rem; color: var(--text-dim);">Lab Diagnostic Engine</span>
+            </div>
+            <h3 class="quiz-question-title" id="quizQuestionTitle">What is your primary use case?</h3>
+            <div class="quiz-options-grid" id="quizOptionsGrid">
+              <!-- Dynamically populated via JS -->
+            </div>
+            <div class="quiz-footer-actions">
+              <button class="btn-secondary" id="quizPrevBtn" style="visibility: hidden;">← Back</button>
+              <button class="btn-primary" id="quizNextBtn">Next Step →</button>
+            </div>
+          </div>
+
+          <!-- Result View -->
+          <div class="quiz-result-wrapper" id="quizResultWrapper">
+            <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">🎉</div>
+            <h3 style="font-size: 1.6rem; margin-bottom: 0.5rem;">Here is Your Recommended Laptop!</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">Based on our comprehensive lab benchmark results:
+            </p>
+            <div id="quizResultCard">
+              <!-- Dynamically populated -->
+            </div>
+            <button class="btn-secondary" id="quizRestartBtn" style="margin-top: 1rem;">
+              ↺ Retake Quiz
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Laptop Reviews Grid Section
+         ========================================================================== -->
+    <section class="reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Tested & Ranked</span>
+          <h2 class="section-title">In-Depth Laptop Reviews</h2>
+          <p class="section-subtitle">Browse through our exhaustive reviews with color gamut analyses, thermal charts,
+            and honest pros & cons.</p>
+        </div>
+
+        <!-- Filter & Search Toolbar -->
+        <div class="filter-toolbar">
+          <div class="filter-top-row">
+            <ul class="category-pills-list" id="categoryFilters" role="tablist" aria-label="Laptop Categories">
+              <li><button class="category-pill-btn active" data-category="all" role="tab" aria-selected="true">All
+                  Laptops (6)</button></li>
+              <li><button class="category-pill-btn" data-category="gaming" role="tab"
+                  aria-selected="false">Gaming</button></li>
+              <li><button class="category-pill-btn" data-category="ultrabook" role="tab"
+                  aria-selected="false">Ultraportable</button></li>
+              <li><button class="category-pill-btn" data-category="creator" role="tab" aria-selected="false">Creator /
+                  Workstation</button></li>
+              <li><button class="category-pill-btn" data-category="student" role="tab" aria-selected="false">Student /
+                  Budget</button></li>
+              <li><button class="category-pill-btn" data-category="convertible" role="tab" aria-selected="false">2-in-1
+                  Stylus</button></li>
+            </ul>
+          </div>
+
+          <div class="filter-bottom-row">
+            <span class="results-count-text" id="resultsCountText">Showing 6 of 6 laptops</span>
+
+            <div class="sort-select-wrapper">
+              <label for="sortSelect">Sort By:</label>
+              <select id="sortSelect" class="custom-select" aria-label="Sort laptops">
+                <option value="rating-desc">Highest Lab Score</option>
+                <option value="battery-desc">Longest Battery Life</option>
+                <option value="performance-desc">Highest CPU Benchmark</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="laptops-grid" id="laptopsGrid">
+          <!-- Populated dynamically via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Benchmark Testing Methodology Section
+         ========================================================================== -->
+    <section class="methodology-section" id="methodology">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Scientific Precision</span>
+          <h2 class="section-title">How We Test Every Laptop</h2>
+          <p class="section-subtitle">We don't rely on synthetic marketing claims. Every score is backed by repeatable,
+            standardized lab procedures.</p>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <path d="m4.93 4.93 4.24 4.24" />
+                <path d="m14.83 9.17 4.24-4.24" />
+                <path d="m14.83 14.83 4.24 4.24" />
+                <path d="m9.17 14.83-4.24 4.24" />
+              </svg>
+            </div>
+            <h3>Display Calibration</h3>
+            <p>Every screen is analyzed with an X-Rite i1Pro spectrophotometer at 150 nits to measure delta-E color
+              accuracy, DCI-P3 gamut coverage, and peak HDR brightness.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="1" y="6" width="18" height="12" rx="2" />
+                <line x1="23" y1="13" x2="23" y2="11" />
+                <line x1="6" y1="12" x2="14" y2="12" />
+              </svg>
+            </div>
+            <h3>Standardized Battery Drain</h3>
+            <p>Our custom headless browser test loops 35 real-world websites, 4K streaming clips, and Google Docs
+              productivity sweeps until 0% battery shutdown at calibrated 150 nits.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v20" />
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+              </svg>
+            </div>
+            <h3>Thermal & Acoustic Stress</h3>
+            <p>We log chassis heatmaps using FLIR thermal cameras over a 45-minute continuous Cinebench multi-core loop
+              and measure decibel fan noise at a 50cm head position.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+              </svg>
+            </div>
+            <h3>Frame Rate Stability</h3>
+            <p>We log 1% low frame rates, latency spikes, and frametime variances in modern titles like Cyberpunk 2077,
+              Shadow of the Tomb Raider, and Blender 3D render cycles.</p>
+          </div>
+        </div>
+
+        <!-- Buyer FAQ Accordion -->
+        <div class="section-header" style="margin-top: 4rem; margin-bottom: 2rem;" id="faq">
+          <span class="section-tag">Buyer's Handbook</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>How much RAM do I really need in 2026?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>For everyday web browsing, streaming, and college work, 16GB is the modern sweet spot. If you do 4K
+                video editing, heavy local AI models, or gaming at max textures, 32GB is strongly recommended. 64GB is
+                reserved for extreme 3D render workstations and massive codebases.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>OLED vs. Mini-LED vs. IPS: Which display is best for me?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p><strong>OLED</strong> delivers infinite contrast, true pitch blacks, and vibrant colors, making it
+                ideal for movies and photo editing. <strong>Mini-LED</strong> achieves higher sustained brightness
+                (1,000+ nits) with zero burn-in risk, perfect for outdoor use and HDR video grading.
+                <strong>IPS</strong> remains the reliable, energy-efficient choice for budget-conscious buyers.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>Does ByteBench receive free review units with editorial conditions?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Never. Over 80% of our test laptops are purchased directly at retail anonymously. Any manufacturer
+                loaner units are returned immediately after testing, and manufacturers are never given advance previews
+                of our scores or verdicts.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>Can I upgrade the RAM and SSD on modern laptops?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>On Apple silicon MacBooks, memory and storage are soldered and cannot be upgraded after purchase. On
+                most Windows gaming laptops and business laptops (like AORUS and Forge), dual M.2 SSD slots and DDR5
+                SODIMM slots remain user-serviceable. Always check our Detailed Specs tab before buying!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Newsletter / Community Section
+         ========================================================================== -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-box">
+          <h2>Stay Ahead of Tech Curves</h2>
+          <p>Get our weekly benchmark breakdowns, secret laptop discount alerts, and early test results delivered
+            directly to your inbox. No spam, ever.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" id="newsletterInput" class="newsletter-input" placeholder="Enter your email address..."
+              required aria-label="Email address for newsletter">
+            <button type="submit" class="btn-primary" id="newsletterSubmitBtn">
+              Subscribe Free
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <div class="logo-wrapper">
+            <div class="logo-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="2" y1="20" x2="22" y2="20" />
+                <path d="M12 17v3" />
+              </svg>
+            </div>
+            <span>Byte<span class="text-gradient">Bench</span></span>
+          </div>
+          <p>Unbiased, lab-tested laptop reviews and benchmarking databases designed to help power users, gamers, and
+            students choose the perfect machine.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul class="footer-links">
+            <li><a href="#reviews">Gaming Laptops</a></li>
+            <li><a href="#reviews">Ultraportables</a></li>
+            <li><a href="#reviews">Creator Workstations</a></li>
+            <li><a href="#reviews">Student Budget</a></li>
+            <li><a href="#reviews">2-in-1 Touchscreens</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Benchmarks</h4>
+          <ul class="footer-links">
+            <li><a href="#methodology">Cinebench 2024 Lab</a></li>
+            <li><a href="#methodology">150-Nit Battery Index</a></li>
+            <li><a href="#methodology">Thermal Throttling Tests</a></li>
+            <li><a href="#methodology">Acoustic dB Testing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>ByteBench Lab</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">About Our Lab</a></li>
+            <li><a href="#methodology">Editorial Ethics</a></li>
+            <li><a href="#faq">Buyer FAQ</a></li>
+            <li><a href="#siteHeader">Back to Top ↑</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <span>© 2026 ByteBench Technologies. All rights reserved.</span>
+        <span>Independent Hardware Testing & Architecture Lab.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Floating Comparison Dock
+       ========================================================================== -->
+  <aside class="compare-dock" id="compareDock" aria-label="Comparison dock">
+    <div class="compare-items-thumbs" id="compareThumbsContainer">
+      <!-- 3 comparison slots dynamically injected -->
+    </div>
+    <div class="compare-dock-actions">
+      <button class="btn-primary" id="openCompareModalBtn" style="padding: 0.5rem 1.15rem; font-size: 0.88rem;">
+        Compare Now (<span id="compareDockCount">0 Selected</span>)
+      </button>
+      <button class="btn-secondary" id="clearCompareBtn" style="padding: 0.5rem 0.85rem; font-size: 0.82rem;">
+        Clear
+      </button>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       In-Depth Review Modal
+       ========================================================================== -->
+  <div class="modal-overlay" id="reviewModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close review modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-hero-cover">
+        <img id="modalHeroImg" src="" alt="Laptop cover">
+        <div class="modal-cover-gradient"></div>
+      </div>
+
+      <div class="modal-main-content">
+        <div class="modal-header-info">
+          <div>
+            <h2 class="modal-laptop-title" id="modalTitle">Laptop Title</h2>
+            <p class="modal-laptop-meta" id="modalSubtitle">Sub specs</p>
+          </div>
+          <div class="modal-overall-score-box">
+            <div class="modal-score-num" id="modalScoreNum">9.8</div>
+            <div class="modal-score-label">ByteBench Lab Score</div>
+          </div>
+        </div>
+
+        <!-- Tab navigation inside modal -->
+        <div class="modal-tabs" role="tablist">
+          <button class="modal-tab-btn active" data-tab="overview" role="tab">Overview & Verdict</button>
+          <button class="modal-tab-btn" data-tab="benchmarks" role="tab">Lab Benchmarks</button>
+          <button class="modal-tab-btn" data-tab="specs" role="tab">Detailed Specs</button>
+          <button class="modal-tab-btn" data-tab="reviews" role="tab">User Reviews</button>
+        </div>
+
+        <!-- Tab 1: Overview -->
+        <div class="tab-pane active" id="tab-overview" role="tabpanel">
+          <div class="verdict-banner">
+            <div class="verdict-headline" id="verdictHeadline">Headline</div>
+            <p class="verdict-summary" id="verdictSummary">Summary</p>
+          </div>
+
+          <div class="pros-cons-grid">
+            <div class="pros-box">
+              <h4>The Good</h4>
+              <ul class="pros-cons-list" id="verdictProsList"></ul>
+            </div>
+            <div class="cons-box">
+              <h4>The Compromises</h4>
+              <ul class="pros-cons-list" id="verdictConsList"></ul>
+            </div>
+          </div>
+
+          <div
+            style="background: var(--bg-surface-elevated); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+            <strong
+              style="color: var(--accent-cyan); display: block; margin-bottom: 0.35rem; font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.5px;">Who
+              Should Buy This?</strong>
+            <p id="verdictIdealFor" style="font-size: 0.92rem; color: var(--text-muted);"></p>
+          </div>
+        </div>
+
+        <!-- Tab 2: Lab Benchmarks -->
+        <div class="tab-pane" id="tab-benchmarks" role="tabpanel">
+          <h3 style="margin-bottom: 1.25rem; font-size: 1.25rem;">Standardized Performance Matrix</h3>
+          <div id="benchmarksContainer">
+            <!-- Benchmarks injected here -->
+          </div>
+        </div>
+
+        <!-- Tab 3: Detailed Specs -->
+        <div class="tab-pane" id="tab-specs" role="tabpanel">
+          <h3 style="margin-bottom: 1.25rem; font-size: 1.25rem;">Verified Hardware Specification Sheet</h3>
+          <table class="specs-table">
+            <tbody id="modalSpecsTableBody">
+              <!-- Specs rows injected here -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Tab 4: User Reviews -->
+        <div class="tab-pane" id="tab-reviews" role="tabpanel">
+          <h3 style="margin-bottom: 1.25rem; font-size: 1.25rem;">Community Experiences</h3>
+          <div class="user-reviews-stream" id="userReviewsList">
+            <!-- Reviews injected here -->
+          </div>
+
+          <!-- Add Review Form -->
+          <form class="add-review-form" id="addReviewForm">
+            <input type="hidden" id="reviewLaptopIdInput" value="">
+            <h4 class="form-title">Leave Your Rating & Feedback</h4>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-group">
+                <label for="reviewerName">Your Name</label>
+                <input type="text" id="reviewerName" class="form-control" placeholder="e.g. Alex M." required>
+              </div>
+              <div class="form-group">
+                <label for="reviewerRating">Star Rating</label>
+                <select id="reviewerRating" class="form-control">
+                  <option value="5">★★★★★ (5/5 Exceptional)</option>
+                  <option value="4">★★★★☆ (4/5 Great)</option>
+                  <option value="3">★★★☆☆ (3/5 Average)</option>
+                  <option value="2">★★☆☆☆ (2/5 Below Average)</option>
+                  <option value="1">★☆☆☆☆ (1/5 Not Recommended)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="reviewerComment">Your Review</label>
+              <textarea id="reviewerComment" class="form-control" rows="3"
+                placeholder="Share your experience with battery life, build quality, gaming, keyboard feel..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="padding: 0.6rem 1.4rem; font-size: 0.9rem;">
+              Post Review
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Side-by-Side Comparison Modal
+       ========================================================================== -->
+  <div class="modal-overlay" id="compareModal" role="dialog" aria-modal="true" aria-label="Comparison Table">
+    <div class="modal-container" style="max-width: 1100px;">
+      <button class="modal-close-btn" id="compareModalCloseBtn" aria-label="Close comparison modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="comparison-modal-content">
+        <div style="margin-bottom: 1.5rem;">
+          <span class="section-tag">Direct Hardware Face-Off</span>
+          <h2 style="font-size: 1.8rem;">Side-by-Side Laptop Comparison</h2>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">Highlighted green metrics indicate the winning laptop
+            in each benchmark and spec category.</p>
+        </div>
+
+        <div id="comparisonTableContainer">
+          <!-- Dynamically populated comparison table -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="https://theopenmic.duckdns.org/widget.js" data-key="pk_0uFnh3NiiVbi4JdoByRYPfiN" async></script>
+</body>
+
+</html>
