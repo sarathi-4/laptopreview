@@ -39,7 +39,16 @@ ByteBench is a modern, responsive single-page laptop review and lab benchmark we
    - Floating comparison dock that slides up when laptops are selected.
    - Detailed side-by-side modal highlighting winning metrics with green badges.
 
-6. **Testing Methodology & Buyer FAQ**:
+6. **Sara Laptop Shop & Services (Next Page Feature)**:
+   - Extra navbar button (`Our Shop [Next Page →]`) and nav links to seamlessly navigate between the benchmark reviews and the shop service center (`shop.html`).
+   - "Welcome to My Shop" hero banner with live status, shop highlights, and trust guarantees.
+   - 10 comprehensive service detail cards with filters (Hardware Upgrades, Screen & Battery, Cooling & Thermals, Motherboard & Recovery).
+   - Interactive Live Service Cost Estimator with device multipliers, primary service selectors, and optional add-ons.
+   - All-in-one popular service maintenance packages (Basic, Pro Overhaul, Extreme Gaming).
+   - Interactive diagnostic booking form with instant confirmation ticket generator (`SARA-xxxxx`), `localStorage` persistence, and one-click WhatsApp forwarding.
+   - Store location, operating hours, direct hotline, customer testimonials, and shop FAQ accordion.
+
+7. **Testing Methodology & Buyer FAQ**:
    - Standardized testing breakdown: Display spectrophotometer sweeps, automated battery loops, and thermal heatmaps.
    - Expandable interactive accordion FAQ answering common hardware questions.
 
@@ -50,14 +59,21 @@ ByteBench is a modern, responsive single-page laptop review and lab benchmark we
 You can view the website in two ways:
 
 ### Option 1: Open Directly in Any Web Browser
-Simply double-click [index.html](file:///e:/sarathi/index.html) in your file explorer, or right-click and choose **Open with > Chrome / Edge / Firefox**.
+Simply double-click [index.html](file:///T:/saralaptop/laptopreview/index.html) or [shop.html](file:///T:/saralaptop/laptopreview/shop.html) in your file explorer, or right-click and choose **Open with > Chrome / Edge / Firefox**.
 
-### Option 2: Run via the Included Local Node Server
-The local server is already running in the background at:
+### Option 2: Run via the Included Local Server
+The local server runs in the background at:
 ```
 http://localhost:4173
 ```
+- Main Reviews: `http://localhost:4173/index.html`
+- Shop & Services: `http://localhost:4173/shop.html`
+
 To restart it anytime:
+```powershell
+powershell -ExecutionPolicy Bypass -File server.ps1
+```
+or
 ```powershell
 node server.js
 ```
@@ -67,13 +83,15 @@ node server.js
 ## 📂 Project Structure
 
 ```
-e:\sarathi\
-├── index.html            # Main semantic HTML single-page document
+T:\saralaptop\laptopreview\
+├── index.html            # Main laptop review & benchmark portal
+├── shop.html             # "Welcome to My Shop" & comprehensive service details page
 ├── css\
-│   └── styles.css        # Responsive styling, design tokens & dark/light theme
+│   └── styles.css        # Shared responsive styling, design tokens & dark/light theme
 ├── js\
 │   ├── data.js           # Laptop database, specs, scores & quiz questions
-│   └── app.js            # Interactivity, filters, modals, quiz & state
+│   ├── app.js            # Interactivity, filters, modals, quiz & review state
+│   └── shop.js           # Shop logic, cost estimator, booking system & filters
 ├── assets\
 │   └── images\           # High-resolution studio product photographs
 │       ├── macbook-pro.jpg
@@ -82,6 +100,7 @@ e:\sarathi\
 │       ├── creator-workstation.jpg
 │       ├── student-laptop.jpg
 │       └── convertible-laptop.jpg
-├── server.js             # Lightweight zero-dependency static HTTP server
+├── server.js             # Static Node.js HTTP server
+├── server.ps1            # Native PowerShell HTTP server
 └── README.md             # Documentation & setup instructions
 ```
