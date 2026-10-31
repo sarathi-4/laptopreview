@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Welcome to Sara Laptop Store & Service Hub — Expert laptop repair, ultra-fast NVMe SSD and RAM upgrades, liquid-metal thermal repasting, original screen & battery replacements, and certified diagnostics.">
+  <meta name="keywords"
+    content="laptop repair shop, sara laptop services, laptop screen replacement, ssd upgrade, liquid metal repaste, laptop battery replacement, macbook repair, motherboard diagnostic">
+  <meta name="author" content="Sara Laptop & ByteBench Labs">
+  <title>Welcome to My Shop — Sara Laptop Store & Tech Services</title>
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300f0ff'><path d='M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z'/></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="shop-page-body">
+
+  <!-- Ambient Glow Backgrounds -->
+  <div class="bg-ambient-light" aria-hidden="true">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+    <div class="ambient-blob blob-3"></div>
+  </div>
+
+  <!-- ==========================================================================
+       Header & Navigation Bar
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <nav class="navbar" aria-label="Shop Navigation">
+        <!-- Logo -->
+        <a href="index.html" class="logo-wrapper" id="brandLogo" title="Back to ByteBench Home">
+          <div class="logo-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+              <line x1="2" y1="20" x2="22" y2="20" />
+              <path d="M12 17v3" />
+            </svg>
+          </div>
+          <span>Sara<span class="text-gradient">Laptop</span> <span class="shop-badge-header">Shop</span></span>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link nav-link-return">← Back to Reviews</a></li>
+          <li><a href="#welcome" class="nav-link active">Welcome</a></li>
+          <li><a href="#services" class="nav-link">Our Services</a></li>
+          <li><a href="#packages" class="nav-link">Packages</a></li>
+          <li><a href="#calculator" class="nav-link">Cost Estimator</a></li>
+          <li><a href="#booking" class="nav-link">Book Repair</a></li>
+          <li><a href="#contact" class="nav-link">Store & Contact</a></li>
+        </ul>
+
+        <!-- Navigation Right Actions -->
+        <div class="nav-actions">
+          <!-- Back to Reviews Button -->
+          <a href="index.html" class="btn-return-home" title="Return to Benchmark Reviews">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            <span>Reviews Home</span>
+          </a>
+
+          <!-- Book Appointment Button -->
+          <a href="#booking" class="btn-primary btn-shop-action" style="padding: 0.55rem 1.15rem; font-size: 0.88rem;">
+            <span>Book Service</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+
+          <!-- Theme Toggle -->
+          <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle dark/light theme"
+            title="Toggle theme">
+            <!-- Injected via JavaScript -->
+          </button>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         Hero Section — Welcome to My Shop
+         ========================================================================== -->
+    <section class="shop-hero-section" id="welcome">
+      <div class="container">
+        <div class="shop-hero-grid">
+          <!-- Left Hero Text -->
+          <div class="shop-hero-content">
+            <div class="hero-pill-badge shop-welcome-badge">
+              <span class="pulse-dot"></span>
+              <span>✨ Certified Tech Workshop & Diagnostics Hub</span>
+            </div>
+
+            <h1 class="shop-hero-title">
+              Welcome to <span class="text-gradient">My Shop!</span><br>
+              Sara Laptop Store & Services
+            </h1>
+
+            <p class="shop-hero-description">
+              Welcome to your one-stop tech destination for expert laptop repairs, high-speed RAM & NVMe SSD upgrades,
+              liquid-metal thermal repasting, original display replacements, and component-level motherboard fixes.
+              Every service includes a free 15-point diagnostic check and a 90-day warranty!
+            </p>
+
+            <div class="shop-cta-group">
+              <a href="#services" class="btn-primary" id="heroCtaServices">
+                <span>View Our Service Details</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <polyline points="19 12 12 19 5 12"></polyline>
+                </svg>
+              </a>
+              <a href="#calculator" class="btn-secondary" id="heroCtaCalculator">
+                <span>Instant Cost Estimator</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+                  <line x1="8" y1="6" x2="16" y2="6"></line>
+                  <line x1="16" y1="14" x2="16" y2="18"></line>
+                  <path d="M16 10h.01"></path>
+                  <path d="M12 10h.01"></path>
+                  <path d="M8 10h.01"></path>
+                  <path d="M12 14h.01"></path>
+                  <path d="M8 14h.01"></path>
+                  <path d="M12 18h.01"></path>
+                  <path d="M8 18h.01"></path>
+                </svg>
+              </a>
+              <a href="index.html" class="btn-outline-link">
+                <span>← Back to Reviews Page</span>
+              </a>
+            </div>
+
+            <!-- Shop Quick Badges -->
+            <div class="shop-trust-pills">
+              <div class="trust-pill-item">
+                <span class="trust-icon">🛡️</span>
+                <span>90-Day Repair Warranty</span>
+              </div>
+              <div class="trust-pill-item">
+                <span class="trust-icon">⚡</span>
+                <span>Same-Day Fast Turnaround</span>
+              </div>
+              <div class="trust-pill-item">
+                <span class="trust-icon">💎</span>
+                <span>100% Genuine OEM Parts</span>
+              </div>
+              <div class="trust-pill-item">
+                <span class="trust-icon">🔬</span>
+                <span>Calibrated Lab Diagnostics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Shop Hero Spotlight Card -->
+          <div class="shop-spotlight-card">
+            <div class="spotlight-glass-glow"></div>
+            <div class="shop-spotlight-header">
+              <span class="shop-live-tag">● Store Open Now</span>
+              <span class="shop-rating-tag">★ 4.9 / 5.0 (520+ Reviews)</span>
+            </div>
+
+            <div class="shop-spotlight-banner">
+              <div class="shop-avatar-box">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3>Sara Laptop Service Center</h3>
+                <p>Professional Hardware Diagnostic & Upgrade Lab</p>
+              </div>
+            </div>
+
+            <div class="shop-highlights-list">
+              <div class="shop-highlight-row">
+                <div class="highlight-check">✓</div>
+                <div>
+                  <strong>Free 15-Minute Counter Diagnosis</strong>
+                  <p>Immediate hardware check with temperature & battery audit.</p>
+                </div>
+              </div>
+
+              <div class="shop-highlight-row">
+                <div class="highlight-check">✓</div>
+                <div>
+                  <strong>Zero Data Loss Guarantee</strong>
+                  <p>Your documents, source code, and family photos are protected.</p>
+                </div>
+              </div>
+
+              <div class="shop-highlight-row">
+                <div class="highlight-check">✓</div>
+                <div>
+                  <strong>Transparent Upfront Pricing</strong>
+                  <p>No hidden charges, diagnostic fees waived with any repair.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="shop-spotlight-footer">
+              <div class="store-hours-mini">
+                <span class="hours-label">Today's Hours:</span>
+                <span class="hours-time">9:30 AM – 8:30 PM</span>
+              </div>
+              <a href="#booking" class="btn-primary" style="padding: 0.55rem 1.25rem; font-size: 0.88rem;">
+                Book Now →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shop Stats Row -->
+        <div class="shop-stats-grid">
+          <div class="shop-stat-card">
+            <h4>9,500+</h4>
+            <p>Laptops Repaired & Upgraded</p>
+            <span class="stat-sub">Across All Major Brands</span>
+          </div>
+          <div class="shop-stat-card">
+            <h4>-18°C</h4>
+            <p>Average Temp Drop</p>
+            <span class="stat-sub">Liquid Metal Repaste</span>
+          </div>
+          <div class="shop-stat-card">
+            <h4>45 Mins</h4>
+            <p>Fastest RAM/SSD Upgrade</p>
+            <span class="stat-sub">While You Wait</span>
+          </div>
+          <div class="shop-stat-card">
+            <h4>100%</h4>
+            <p>Genuine Replaced Parts</p>
+            <span class="stat-sub">OEM Sourced & Tested</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Our Service Details Section
+         ========================================================================== -->
+    <section class="shop-services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Comprehensive Care</span>
+          <h2 class="section-title">Our Professional Service Details</h2>
+          <p class="section-subtitle">
+            Explore our specialized service packages, from precision board repairs to peak thermal optimizations.
+            Select any service below to get an instant quote or book your visit.
+          </p>
+        </div>
+
+        <!-- Service Category Filter Pills -->
+        <div class="service-filters-wrapper">
+          <ul class="service-category-pills" id="serviceFilters" role="tablist">
+            <li><button class="service-filter-btn active" data-filter="all">All Services (10)</button></li>
+            <li><button class="service-filter-btn" data-filter="hardware">Upgrades & Speed</button></li>
+            <li><button class="service-filter-btn" data-filter="screen-battery">Screen & Battery</button></li>
+            <li><button class="service-filter-btn" data-filter="cooling">Cooling & Thermals</button></li>
+            <li><button class="service-filter-btn" data-filter="motherboard">Motherboard & Recovery</button></li>
+          </ul>
+        </div>
+
+        <!-- Services Cards Grid -->
+        <div class="services-cards-grid" id="servicesCardsGrid">
+
+          <!-- Service 1: Diagnostics -->
+          <div class="service-card" data-category="motherboard" data-service-id="diagnostic">
+            <div class="service-card-top">
+              <div class="service-icon-box cyan-glow">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                </svg>
+              </div>
+              <span class="service-category-badge">Motherboard & Chipset</span>
+            </div>
+            <h3 class="service-title">Complete 25-Point Hardware Diagnostic</h3>
+            <p class="service-desc">
+              Comprehensive multimeter and thermal camera audit of all power rails, GPU/CPU vCore lines, charging
+              circuits, BIOS integrity, and storage health.
+            </p>
+            <ul class="service-features-list">
+              <li>Power controller & capacitor leak check</li>
+              <li>Thermal imaging heatmap scan</li>
+              <li>RAM memtest & SSD SMART health inspection</li>
+              <li>Free with any repair service</li>
+            </ul>
+            <div class="service-meta-box">
+              <div class="service-pricing">
+                <span class="price-label">Starting at</span>
+                <span class="price-val">$19 <span class="free-tag">/ Free w/ repair</span></span>
+              </div>
+              <div class="service-duration">
+                <span class="time-label">Turnaround</span>
+                <span class="time-val">2 – 3 Hours</span>
+              </div>
+            </div>
+            <button class="btn-primary btn-book-service" data-service-name="Hardware Diagnostic">
+              Request Diagnostic →
+            </button>
+          </div>
+
+          <!-- Service 2: RAM & NVMe SSD Upgrade -->
+          <div class="service-card featured-service" data-category="hardware" data-service-id="ssd-ram">
+            <div class="featured-service-ribbon">Most Requested</div>
+            <div class="service-card-top">
+              <div class="service-icon-box purple-glow">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <span class="service-category-badge">Performance Boost</span>
+            </div>
+            <h3 class="service-title">High-Speed NVMe SSD & RAM Upgrade</h3>
+            <p class="service-desc">
+              Upgrade to blistering Gen4/Gen5 PCIe NVMe SSDs (500GB up to 4TB) and high-frequency dual-channel DDR4/DDR5
+              RAM (up to 64GB). Includes 100% bit-for-bit drive cloning.
+            </p>
+            <ul class="service-features-list">
+              <li>Up to 7,500 MB/s read/write speed drives</li>
+              <li>Zero data loss cloning (all files, apps & passwords preserved)</li>
+              <li>Boot times reduced to under 7 seconds</li>
+              <li>Supports Dell, Lenovo, HP, Asus, Acer, MSI & Framework</li>
+            </ul>
+            <div class="service-meta-box">
+              <div class="service-pricing">
+                <span class="price-label">Starting at</span>
+                <span class="price-val">$49 <span class="price-note">+ hardware</span></span>
+              </div>
+              <div class="service-duration">
+                <span class="time-label">Turnaround</span>
+                <span class="time-val">45 – 60 Mins</span>
+              </div>
+            </div>
+            <button class="btn-primary btn-book-service" data-service-name="RAM & NVMe SSD Upgrade">
+              Upgrade My Laptop →
+            </button>
+          </div>
+
+          <!-- Service 3: Liquid-Metal & Thermal Overhaul -->
+          <div class="service-card" data-category="cooling" data-service-id="thermal">
+            <div class="service-card-top">
+              <div class="service-icon-box cyan-glow">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path>
+                </svg>
+              </div>
+              <span class="service-category-badge">Cooling & Noise</span>
+            </div>
+            <h3 class="service-title">Deep Thermal Overhaul & Liquid-Metal Repaste</h3>
+            <p class="service-desc">
+              Complete dual-fan de-clogging, ultrasonic heatsink fin cleaning, and premium application of Thermal
+              Grizzly Kryonaut or liquid metal. Eliminate thermal throttling permanently.
+            </p>
+            <ul class="service-features-list">
+              <li>Lowers CPU/GPU temperatures by 12°C – 22°C</li>
+              <li>High-durability thermal putty on VRMs & VRAM</li>
+              <li>Acoustic fan noise reduction up to 8 decibels</li>
+              <li>Includes pre-and-post Cinebench thermal logs</li>
+            </ul>
+            <div class="service-meta-box">
+              <div class="service-pricing">
+                <span class="price-label">Starting at</span>
+                <span class="price-val">$39 <span class="price-note">complete</span></span>
+              </div>
+              <div class="service-duration">
+                <span class="time-label">Turnaround</span>
+                <span class="time-val">1.5 – 2 Hours</span>
+              </div>
+            </div>
+            <button class="btn-primary btn-book-service" data-service-name="Thermal Repasting & Cooling">
+              Cool Down My PC →
+            </button>
+          </div>
+
+          <!-- Service 4: Screen Replacement -->
+          <div class="service-card" data-category="screen-battery" data-service-id="screen">
+            <div class="service-card-top">
+              <div class="service-icon-box amber-glow">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <span class="service-category-badge">Display & Visuals</span>
+            </div>
+            <h3 class="service-title">Original Screen & OLED Display Replacement</h3>
+            <p class="service-desc">
+              Replacement of cracked, flickering, vertical line, or bleeding screens. We stock high-gamut 100% sRGB,
+              144Hz/240Hz gaming panels, and factory OLED assemblies.
+            </p>
+            <ul class="service-features-list">
+              <li>Zero dead-pixel warranty</li>
+              <li>Color spectrophotometer calibration included</li>
+              <li>MacBook Retina & Touchscreen digitizer support</li>
+              <li>Anti-glare matte & glossy glass options</li>
+            </ul>
+            <div class="service-meta-box">
+              <div class="service-pricing">
+                <span class="price-label">Starting at</span>
+                <span class="price-val">$79 <span class="price-note">+ panel</span></span>
+              </div>
+              <div class="service-duration">
+                <span class="time-label">Turnaround</span>
+                <span class="time-val">Same-Day / 24h</span>
+              </div>
+            </div>
+            <button class="btn-primary btn-book-service" data-service-name="Screen Replacement">
+              Replace Screen →
+            </button>
+          </div>
+
+          <!-- Service 5: Battery Replacement -->
+          <div class="service-card" data-category="screen-battery" data-service-id="battery">
+            <div class="service-card-top">
+              <div class="service-icon-box emerald-glow">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="1" y="6" width="18" height="12" rx="2"></rect>
+                  <line x1="23" y1="13" x2="23" y2="11"></line>
+                  <line x1="6" y1="11" x2="6" y2="13"></line>
+                  <line x1="10" y1="9" x2="10" y2="15"></line>
+                </svg>
+              </div>
+              <span class="service-category-badge">Power & Charging</span>
+            </div>
+            <h3 class="service-title">OEM Battery & USB-C Power Jack Repair</h3>
+            <p class="service-desc">
+              Resolve bulging batteries, sudden shutdowns, or faulty charging ports. We replace tired cells with
+              certified Tier-1 lithium polymer batteries with 6-month replacement warranty.
+            </p>
+            <ul class="service-features-list">
+              <li>Restores 8 to 18+ hours real-world battery endurance</li>
+              <li>Safe disposal and eco-recycling of old battery</li>
+              <li>USB-C Power Delivery controller & DC jack soldering</li>
+              <li>Overcharge & short-circuit safety testing</li>
+            </ul>
+            <div class="service-meta-box">
+              <div class="service-pricing">
+                <span class="price-label">Starting at</span>
+                <span class="price-val">$45 <span class="price-note">+ battery</span></span>
+              </div>
+              <div class="service-duration">
+                <span class="time-label">Turnaround</span>
+                <span class="time-val">1 – 2 Hours</span>
+              </div>
+            </div>
+            <button class="btn-primary btn-book-service" data-service-name="Battery & Charging Port">
+              Restore Battery →
+            </button>
+          </div>
+
+          <!-- Service 6: Liquid Damage Ultrasonic Recovery -->
+          <div class="service-card" data-category="motherboard" data-service-id="liquid-damage">
+            <div class="service-card-top">
+              <div class="service-icon-box purple-glow">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                </svg>
+              </div>
+              <span class="service-category-badge">Emergency Rescue</span>
+            </div>
+            <h3 class="service-title">Spill, Liquid Damage & Ultrasonic Restoration</h3>
+            <p class="service-desc">
+              Accidental coffee, tea, or water spills treated immediately with chemical solvent baths in our ultrasonic
+              tank to stop corrosion. Micro-soldering of eroded traces and chips.
+            </p>
+            <ul class="service-features-list">
+              <li>Ultrasonic PCB tank wash removes corrosive salts</li>
+              <li>Stereomicroscope inspection of SMD traces</li>
+              <li>88% success rate when brought in within 48 hours</li>
+              <li>No fix, no fee diagnostic policy</li>
+            </ul>
+            <div class="service-meta-box">
+              <div class="service-pricing">
+                <span class="price-label">Starting at</span>
+                <span class="price-val">$89 <span class="price-note">board recovery</span></span>
+              </div>
+              <div class="service-duration">
+                <span class="time-label">Turnaround</span>
+                <span class="time-val">24 – 48 Hours</span>
+              </div>
+            </div>
+            <button class="btn-primary btn-book-service" data-service-name="Liquid Damage Recovery">
+              Rescue My Laptop →
+            </button>
+          </div>
+
+          <!-- Service 7: Hinge & Keyboard Repair -->
+          <div class="service-card" data-category="hardware" data-service-id="hinge-keyboard">
+            <div class="service-card-top">
+              <div class="service-icon-box amber-glow">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <path d="M6 8h.01"></path>
+                  <path d="M10 8h.01"></path>
+                  <path d="M14 8h.01"></path>
+                  <path d="M18 8h.01"></path>
+                  <path d="M8 12h.01"></path>
+                  <path d="M12 12h.01"></path>
+                  <path d="M16 12h.01"></path>
+                  <path d="M7 16h10"></path>
+                </svg>
+              </div>
+              <span class="service-category-badge">Chassis & Input</span>
+            </div>
+            <h3 class="service-title">Broken Hinge & Backlit Keyboard Repair</h3>
+            <p class="service-desc">
+              Fix cracked corner hinges, separating plastic frames, sticky key switches, non-responsive trackpads, or
+              broken RGB backlights. Structural epoxy and metal bracket reinforcement.
+            </p>
+            <ul class="service-features-list">
+              <li>Prevents costly screen cable tearing</li>
+              <li>Original OEM membrane & mechanical key switches</li>
+              <li>Precision glass trackpad clicker realignment</li>
+              <li>Reinforced brass threaded screw anchors</li>
+            </ul>
+            <div class="service-meta-box">
+              <div class="service-pricing">
+                <span class="price-label">Starting at</span>
+                <span class="price-val">$39 <span class="price-note">chassis fix</span></span>
+              </div>
+              <div class="service-duration">
+                <span class="time-label">Turnaround</span>
+                <span class="time-val">2 – 4 Hours</span>
+              </div>
+            </div>
+            <button class="btn-primary btn-book-service" data-service-name="Hinge & Keyboard Repair">
+              Fix Body & Keys →
+            </button>
+          </div>
+
+          <!-- Service 8: Clean OS & Optimization -->
+          <div class="service-card" data-category="hardware" data-service-id="os-clean">
+            <div class="service-card-top">
+              <div class="service-icon-box emerald-glow">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="12 8 8 12 12 16 12 8"></polygon>
+                  <line x1="16" y1="12" x2="12" y2="12"></line>
+                </svg>
+              </div>
+              <span class="service-category-badge">Software Tuning</span>
+            </div>
+            <h3 class="service-title">Clean OS Install & Bloatware Purge</h3>
+            <p class="service-desc">
+              Fresh installation of Windows 11 Pro, Linux, or macOS with zero manufacturer bloatware, optimized power
+              profiles, verified latest drivers, and security updates.
+            </p>
+            <ul class="service-features-list">
+              <li>Removes background telemetry & CPU drains</li>
+              <li>Clean registry & custom fan curve tuning</li>
+              <li>Latest stable BIOS & firmware flashing</li>
+              <li>Full antivirus & productivity suite preparation</li>
+            </ul>
+            <div class="service-meta-box">
+              <div class="service-pricing">
+                <span class="price-label">Starting at</span>
+                <span class="price-val">$29 <span class="price-note">fixed rate</span></span>
+              </div>
+              <div class="service-duration">
+                <span class="time-label">Turnaround</span>
+                <span class="time-val">1 – 2 Hours</span>
+              </div>
+            </div>
+            <button class="btn-primary btn-book-service" data-service-name="Clean OS & Optimization">
+              Speed Up My OS →
+            </button>
+          </div>
+
+          <!-- Service 9: Data Recovery -->
+          <div class="service-card" data-category="motherboard" data-service-id="data-recovery">
+            <div class="service-card-top">
+              <div class="service-icon-box purple-glow">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <span class="service-category-badge">Critical Recovery</span>
+            </div>
+            <h3 class="service-title">Emergency Data Recovery & Drive Migration</h3>
+            <p class="service-desc">
+              Extract lost family photos, tax records, project source code, and client databases from clicking HDDs,
+              corrupt SSDs, blue-screening systems, or accidentally formatted drives.
+            </p>
+            <ul class="service-features-list">
+              <li>Raw sector-by-sector extraction engine</li>
+              <li>100% strict client confidentiality & privacy NDA</li>
+              <li>Export directly to secure external SSD/USB</li>
+              <li>Evaluation before you commit</li>
+            </ul>
+            <div class="service-meta-box">
+              <div class="service-pricing">
+                <span class="price-label">Starting at</span>
+                <span class="price-val">$69 <span class="price-note">recovery tier</span></span>
+              </div>
+              <div class="service-duration">
+                <span class="time-label">Turnaround</span>
+                <span class="time-val">1 – 3 Days</span>
+              </div>
+            </div>
+            <button class="btn-primary btn-book-service" data-service-name="Data Recovery & Migration">
+              Recover My Files →
+            </button>
+          </div>
+
+          <!-- Service 10: Trade-In & Refurbished -->
+          <div class="service-card" data-category="hardware" data-service-id="trade-in">
+            <div class="service-card-top">
+              <div class="service-icon-box cyan-glow">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path>
+                </svg>
+              </div>
+              <span class="service-category-badge">Buy, Sell & Trade</span>
+            </div>
+            <h3 class="service-title">Trade-In Valuation & Certified Refurbished Laptops</h3>
+            <p class="service-desc">
+              Trade your old machine for instant store credit towards a higher-spec model, or buy inspected,
+              benchmarked, and certified pre-owned laptops with our 6-month shop warranty.
+            </p>
+            <ul class="service-features-list">
+              <li>Instant 15-minute valuation at the counter</li>
+              <li>Every sold laptop has clean battery and new thermal paste</li>
+              <li>Free data transfer from your old machine to new one</li>
+              <li>Honest market-matching buyback price</li>
+            </ul>
+            <div class="service-meta-box">
+              <div class="service-pricing">
+                <span class="price-label">Instant Quote</span>
+                <span class="price-val">Top Dollar <span class="price-note">paid</span></span>
+              </div>
+              <div class="service-duration">
+                <span class="time-label">Turnaround</span>
+                <span class="time-val">15 – 30 Mins</span>
+              </div>
+            </div>
+            <button class="btn-primary btn-book-service" data-service-name="Trade-In & Buyback">
+              Get Trade Value →
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Service Packages Comparison Section
+         ========================================================================== -->
+    <section class="shop-packages-section" id="packages">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Value Bundles</span>
+          <h2 class="section-title">Popular All-In-One Service Packages</h2>
+          <p class="section-subtitle">
+            Save up to 35% by bundling maintenance, thermal care, and speed upgrades into our bestselling packages.
+          </p>
+        </div>
+
+        <div class="packages-grid">
+          <!-- Package 1 -->
+          <div class="package-card">
+            <div class="package-header">
+              <span class="package-tier-name">Essential Tune</span>
+              <h3 class="package-name">Basic Clean & Tune-Up</h3>
+              <p class="package-desc">Ideal for general web browsing, college, and office laptops running sluggishly.</p>
+              <div class="package-price-box">
+                <span class="package-currency">$</span>
+                <span class="package-amount">39</span>
+                <span class="package-period">/ one-time</span>
+              </div>
+            </div>
+
+            <ul class="package-features">
+              <li><span class="check-icon">✓</span> 15-Point Hardware Diagnostics</li>
+              <li><span class="check-icon">✓</span> External & Fan De-Dusting</li>
+              <li><span class="check-icon">✓</span> Windows/Mac Software Bloatware Cleanup</li>
+              <li><span class="check-icon">✓</span> Startup App & Registry Optimization</li>
+              <li><span class="check-icon">✓</span> Battery Health Report</li>
+              <li class="disabled"><span class="cross-icon">✕</span> Liquid Metal Repasting</li>
+              <li class="disabled"><span class="cross-icon">✕</span> VRM Thermal Putty Pads</li>
+            </ul>
+
+            <button class="btn-secondary package-select-btn" data-package="Basic Clean & Tune-Up ($39)">
+              Select Essential Plan
+            </button>
+          </div>
+
+          <!-- Package 2: Most Popular -->
+          <div class="package-card featured-package">
+            <div class="package-popular-badge">★ Most Popular Choice</div>
+            <div class="package-header">
+              <span class="package-tier-name text-gradient">Pro Overhaul</span>
+              <h3 class="package-name">Performance Revival Bundle</h3>
+              <p class="package-desc">The ultimate package for laptops over 18 months old showing heat and throttling.</p>
+              <div class="package-price-box">
+                <span class="package-currency">$</span>
+                <span class="package-amount">89</span>
+                <span class="package-period">/ one-time</span>
+              </div>
+            </div>
+
+            <ul class="package-features">
+              <li><span class="check-icon">✓</span> Complete 25-Point Circuit Diagnostic</li>
+              <li><span class="check-icon">✓</span> Ultrasonic Heatsink Fin Deep Cleaning</li>
+              <li><span class="check-icon">✓</span> Premium Arctic MX-6 Thermal Repasting</li>
+              <li><span class="check-icon">✓</span> High-Performance K5 Pro VRM Thermal Pads</li>
+              <li><span class="check-icon">✓</span> Clean OS Optimization & Driver Suite</li>
+              <li><span class="check-icon">✓</span> 45-Min Cinebench Stress & Heatmap Log</li>
+              <li><span class="check-icon">✓</span> 90-Day Full Service Guarantee</li>
+            </ul>
+
+            <button class="btn-primary package-select-btn" data-package="Performance Revival Bundle ($89)">
+              Select Pro Overhaul
+            </button>
+          </div>
+
+          <!-- Package 3 -->
+          <div class="package-card">
+            <div class="package-header">
+              <span class="package-tier-name">Extreme Tier</span>
+              <h3 class="package-name">Gaming & Creator Overkill</h3>
+              <p class="package-desc">Engineered for RTX 4080/4090 gaming laptops, workstation dual-screens, and MacBooks.</p>
+              <div class="package-price-box">
+                <span class="package-currency">$</span>
+                <span class="package-amount">149</span>
+                <span class="package-period">/ one-time</span>
+              </div>
+            </div>
+
+            <ul class="package-features">
+              <li><span class="check-icon">✓</span> Everything in Pro Revival Bundle</li>
+              <li><span class="check-icon">✓</span> Thermal Grizzly Conductonaut Liquid Metal</li>
+              <li><span class="check-icon">✓</span> High-grade conformal coating barrier seal</li>
+              <li><span class="check-icon">✓</span> Custom Undervolting & GPU Curve Tuning</li>
+              <li><span class="check-icon">✓</span> Complete NVMe SSD Heatsink Thermal Pads</li>
+              <li><span class="check-icon">✓</span> Expedited Priority Same-Day Turnaround</li>
+              <li><span class="check-icon">✓</span> 180-Day Extended Warranty</li>
+            </ul>
+
+            <button class="btn-secondary package-select-btn" data-package="Gaming & Creator Overkill ($149)">
+              Select Extreme Plan
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Interactive Live Cost Estimator
+         ========================================================================== -->
+    <section class="shop-calculator-section" id="calculator">
+      <div class="container">
+        <div class="calculator-wrapper">
+          <div class="calc-header-box">
+            <span class="section-tag">Instant Quote</span>
+            <h2 class="section-title">Interactive Service Cost Estimator</h2>
+            <p class="section-subtitle">
+              Configure your laptop type and required services to receive a transparent estimated price range and
+              turnaround time instantly.
+            </p>
+          </div>
+
+          <div class="calc-layout-grid">
+            <!-- Controls Form -->
+            <div class="calc-form-pane">
+              <!-- Step 1: Device Category -->
+              <div class="calc-group">
+                <label class="calc-label">1. Select Your Laptop Type</label>
+                <div class="calc-device-selector" id="calcDeviceSelector">
+                  <button type="button" class="device-pill-btn active" data-device="windows-ultrabook" data-multiplier="1.0">
+                    <span class="pill-icon">💻</span>
+                    <span>Windows Ultrabook / Office</span>
+                  </button>
+                  <button type="button" class="device-pill-btn" data-device="gaming-laptop" data-multiplier="1.2">
+                    <span class="pill-icon">🎮</span>
+                    <span>High-Performance Gaming</span>
+                  </button>
+                  <button type="button" class="device-pill-btn" data-device="macbook" data-multiplier="1.3">
+                    <span class="pill-icon">🍏</span>
+                    <span>Apple MacBook (Air / Pro)</span>
+                  </button>
+                  <button type="button" class="device-pill-btn" data-device="touch-convertible" data-multiplier="1.15">
+                    <span class="pill-icon">🔄</span>
+                    <span>2-in-1 Touchscreen / Fold</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Step 2: Primary Service -->
+              <div class="calc-group">
+                <label for="calcPrimaryService" class="calc-label">2. Select Primary Service</label>
+                <select id="calcPrimaryService" class="custom-select calc-select">
+                  <option value="thermal" data-base="39" data-time="1.5 Hours">Thermal Overhaul & Heatsink Cleaning ($39)</option>
+                  <option value="ssd-upgrade" data-base="49" data-time="1 Hour">RAM / NVMe SSD Upgrade & Data Clone ($49)</option>
+                  <option value="screen" data-base="79" data-time="Same-Day">Display Screen Replacement ($79 + part)</option>
+                  <option value="battery" data-base="45" data-time="1.5 Hours">OEM Battery Replacement ($45 + part)</option>
+                  <option value="liquid" data-base="89" data-time="24-48 Hours">Liquid Damage Ultrasonic Clean ($89)</option>
+                  <option value="hinge" data-base="39" data-time="2-3 Hours">Hinge & Mechanical Keyboard Fix ($39)</option>
+                  <option value="os-clean" data-base="29" data-time="1 Hour">Clean OS Install & Optimization ($29)</option>
+                  <option value="data-rec" data-base="69" data-time="1-2 Days">Emergency Data Recovery ($69)</option>
+                </select>
+              </div>
+
+              <!-- Step 3: Add-on Options -->
+              <div class="calc-group">
+                <label class="calc-label">3. Optional Add-ons & Expedited Options</label>
+                <div class="calc-addons-grid">
+                  <label class="addon-checkbox-label">
+                    <input type="checkbox" id="addonExpedite" value="25" data-time-mod="Rush">
+                    <span class="addon-custom-check"></span>
+                    <span class="addon-info">
+                      <strong>Expedited Rush Service (+ $25)</strong>
+                      <small>Skip queue, priority technician allocated immediately.</small>
+                    </span>
+                  </label>
+
+                  <label class="addon-checkbox-label">
+                    <input type="checkbox" id="addonLiquidMetal" value="20">
+                    <span class="addon-custom-check"></span>
+                    <span class="addon-info">
+                      <strong>Thermal Grizzly Liquid Metal Upgrade (+ $20)</strong>
+                      <small>Maximum possible thermal conductivity for demanding chips.</small>
+                    </span>
+                  </label>
+
+                  <label class="addon-checkbox-label">
+                    <input type="checkbox" id="addonBackup" value="19">
+                    <span class="addon-custom-check"></span>
+                    <span class="addon-info">
+                      <strong>Full Cloud & Local Data Backup (+ $19)</strong>
+                      <small>Complete disk image snapshot before any repair.</small>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Live Calculation Summary Card -->
+            <div class="calc-summary-pane">
+              <div class="calc-summary-card">
+                <div class="summary-top">
+                  <span class="summary-badge">Live Estimate</span>
+                  <div class="summary-device-label" id="summaryDeviceLabel">Windows Ultrabook / Office</div>
+                </div>
+
+                <div class="summary-price-display">
+                  <div class="price-range-text">Estimated Service Total:</div>
+                  <div class="price-main-number">
+                    <span class="currency">$</span>
+                    <span id="calcTotalEstimate">39 – 49</span>
+                  </div>
+                  <div class="tax-note">*Labor and standard diagnostic included. Specific OEM parts quoted upfront.</div>
+                </div>
+
+                <div class="summary-breakdown-list">
+                  <div class="breakdown-row">
+                    <span>Base Service Labor:</span>
+                    <strong id="breakdownBasePrice">$39</strong>
+                  </div>
+                  <div class="breakdown-row">
+                    <span>Device Multiplier:</span>
+                    <strong id="breakdownMultiplier">1.0x (Standard)</strong>
+                  </div>
+                  <div class="breakdown-row">
+                    <span>Selected Add-ons:</span>
+                    <strong id="breakdownAddons">$0</strong>
+                  </div>
+                  <div class="breakdown-row highlight-row">
+                    <span>Estimated Turnaround:</span>
+                    <strong id="breakdownTurnaround">1.5 – 2 Hours</strong>
+                  </div>
+                </div>
+
+                <div class="summary-guarantee-note">
+                  <span class="shield-icon">🛡️</span>
+                  <span>Backed by 90-Day Warranty on all parts & labor</span>
+                </div>
+
+                <button class="btn-primary btn-apply-quote" id="btnApplyQuote">
+                  <span>Book This Service Quote →</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Service Appointment & Diagnostic Booking Form
+         ========================================================================== -->
+    <section class="shop-booking-section" id="booking">
+      <div class="container">
+        <div class="booking-grid">
+          <!-- Left Booking Info -->
+          <div class="booking-info-pane">
+            <span class="section-tag">Hassle-Free Booking</span>
+            <h2 class="section-title">Schedule Your Shop Visit or Diagnostic</h2>
+            <p class="section-desc">
+              Book a guaranteed bench slot with our lead technicians. Walk-ins are always welcome, but booking in advance
+              ensures parts are pre-allocated for same-day service.
+            </p>
+
+            <div class="booking-perks-list">
+              <div class="booking-perk-item">
+                <div class="perk-icon-box">📅</div>
+                <div>
+                  <h4>Zero Wait Priority Check-In</h4>
+                  <p>Skip the counter wait — your ticket is pre-registered on arrival.</p>
+                </div>
+              </div>
+
+              <div class="booking-perk-item">
+                <div class="perk-icon-box">💬</div>
+                <div>
+                  <h4>Instant WhatsApp & SMS Confirmation</h4>
+                  <p>Receive live status updates as your laptop progresses through testing.</p>
+                </div>
+              </div>
+
+              <div class="booking-perk-item">
+                <div class="perk-icon-box">🔍</div>
+                <div>
+                  <h4>Transparent Bench Demonstration</h4>
+                  <p>Watch our technicians inspect thermal heatmaps and circuit diagnostics in real time.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Emergency Direct Contact Card -->
+            <div class="emergency-contact-card">
+              <div class="card-icon-round">📞</div>
+              <div>
+                <strong>Need Immediate Assistance?</strong>
+                <p>Call or WhatsApp our repair hotline: <a href="tel:+18005557272" class="hotline-link">+1 (800) 555-SARA (7272)</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Booking Form Card -->
+          <div class="booking-form-card">
+            <div class="form-header-badge">
+              <span>Bench Ticket Reservation</span>
+              <span class="secure-badge">🔒 256-Bit Encrypted</span>
+            </div>
+
+            <form id="shopBookingForm" class="shop-booking-form">
+              <div class="form-row-2col">
+                <div class="form-group">
+                  <label for="bookingName">Full Name *</label>
+                  <input type="text" id="bookingName" class="form-control" placeholder="e.g. David Miller" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="bookingPhone">Phone / WhatsApp Number *</label>
+                  <input type="tel" id="bookingPhone" class="form-control" placeholder="e.g. +1 (555) 019-2834" required>
+                </div>
+              </div>
+
+              <div class="form-row-2col">
+                <div class="form-group">
+                  <label for="bookingEmail">Email Address</label>
+                  <input type="email" id="bookingEmail" class="form-control" placeholder="david@example.com">
+                </div>
+
+                <div class="form-group">
+                  <label for="bookingLaptopModel">Laptop Brand & Exact Model *</label>
+                  <input type="text" id="bookingLaptopModel" class="form-control"
+                    placeholder="e.g. Lenovo Legion 5 / MacBook Pro 14 M2" required>
+                </div>
+              </div>
+
+              <div class="form-row-2col">
+                <div class="form-group">
+                  <label for="bookingService">Service Required *</label>
+                  <select id="bookingService" class="form-control" required>
+                    <option value="Hardware Diagnostic">Complete Hardware Diagnostic</option>
+                    <option value="RAM & NVMe SSD Upgrade">RAM & NVMe SSD Upgrade</option>
+                    <option value="Thermal Repasting & Cooling">Thermal Repasting & Fan Clean</option>
+                    <option value="Screen Replacement">Original Screen Replacement</option>
+                    <option value="Battery & Charging Port">Battery & Charging Port Repair</option>
+                    <option value="Liquid Damage Recovery">Liquid Damage Ultrasonic Clean</option>
+                    <option value="Hinge & Keyboard Repair">Hinge & Mechanical Keyboard Repair</option>
+                    <option value="Clean OS & Optimization">Clean OS Install & Optimization</option>
+                    <option value="Data Recovery & Migration">Emergency Data Recovery</option>
+                    <option value="Trade-In & Buyback">Trade-In Valuation & Pre-Owned</option>
+                    <option value="Other Custom Issue">Other Custom Issue</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="bookingDate">Preferred Date *</label>
+                  <input type="date" id="bookingDate" class="form-control" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="bookingTimeSlot">Preferred Time Slot *</label>
+                <select id="bookingTimeSlot" class="form-control" required>
+                  <option value="Morning (9:30 AM - 12:00 PM)">Morning (9:30 AM - 12:00 PM)</option>
+                  <option value="Early Afternoon (12:00 PM - 3:00 PM)">Early Afternoon (12:00 PM - 3:00 PM)</option>
+                  <option value="Late Afternoon (3:00 PM - 6:00 PM)">Late Afternoon (3:00 PM - 6:00 PM)</option>
+                  <option value="Evening (6:00 PM - 8:30 PM)">Evening (6:00 PM - 8:30 PM)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="bookingSymptoms">Describe Symptoms or Desired Upgrades</label>
+                <textarea id="bookingSymptoms" class="form-control" rows="3"
+                  placeholder="e.g. Laptop fans run loud at idle, battery drops from 60% to 0%, or want to clone 512GB to 2TB NVMe SSD..."></textarea>
+              </div>
+
+              <div class="form-privacy-note">
+                <input type="checkbox" id="privacyAgree" required checked>
+                <label for="privacyAgree">I agree to receive service status notifications via SMS/WhatsApp.</label>
+              </div>
+
+              <button type="submit" class="btn-primary btn-submit-booking" id="btnSubmitBooking">
+                <span>Confirm Service Appointment</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Store Location, Hours & Contact Details Section
+         ========================================================================== -->
+    <section class="shop-store-info-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Visit Our Workshop</span>
+          <h2 class="section-title">Store Location & Operating Hours</h2>
+          <p class="section-subtitle">
+            We are centrally located with dedicated customer parking and immediate walk-in diagnostic desks.
+          </p>
+        </div>
+
+        <div class="store-info-grid">
+          <!-- Physical Shop Details -->
+          <div class="store-card">
+            <div class="store-card-icon">📍</div>
+            <h3>Sara Laptop Store & Care Hub</h3>
+            <p class="store-address">
+              Suite 402, Tech Arcade Building<br>
+              742 Benchmark Boulevard<br>
+              Silicon Corridor, SC 90210
+            </p>
+            <div class="store-card-actions">
+              <button class="btn-secondary copy-btn" id="copyAddressBtn">
+                <span>📋 Copy Address</span>
+              </button>
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
+                <span>Open in Maps ↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Operating Hours -->
+          <div class="store-card">
+            <div class="store-card-icon">🕒</div>
+            <h3>Workshop Operating Hours</h3>
+            <table class="hours-table">
+              <tbody>
+                <tr>
+                  <td>Monday – Friday</td>
+                  <td><strong>9:30 AM – 8:30 PM</strong></td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td><strong>10:00 AM – 7:00 PM</strong></td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td><strong>11:00 AM – 5:00 PM</strong> <span class="badge-walkin">Walk-ins only</span></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="store-status-pill open-now">
+              <span class="pulse-dot"></span>
+              <span>Currently Open For Walk-Ins & Diagnostics</span>
+            </div>
+          </div>
+
+          <!-- Quick Contact -->
+          <div class="store-card">
+            <div class="store-card-icon">💬</div>
+            <h3>Direct Contact & Support</h3>
+            <div class="contact-links-list">
+              <a href="tel:+18005557272" class="contact-row-link">
+                <span class="contact-icon">📞</span>
+                <div>
+                  <strong>Phone Hotline</strong>
+                  <span>+1 (800) 555-7272</span>
+                </div>
+              </a>
+              <a href="https://wa.me/18005557272?text=Hello%20Sara%20Laptop%2C%20I%20have%20an%20inquiry%20about%20my%20laptop"
+                target="_blank" rel="noopener noreferrer" class="contact-row-link whatsapp-row">
+                <span class="contact-icon">📱</span>
+                <div>
+                  <strong>WhatsApp Chat (Instant Reply)</strong>
+                  <span>Click to chat with technician</span>
+                </div>
+              </a>
+              <a href="mailto:support@saralaptop.com" class="contact-row-link">
+                <span class="contact-icon">✉️</span>
+                <div>
+                  <strong>Email Support</strong>
+                  <span>support@saralaptop.com</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Customer Testimonials & Shop Reviews
+         ========================================================================== -->
+    <section class="shop-testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Happy Clients</span>
+          <h2 class="section-title">What Our Customers Say</h2>
+          <p class="section-subtitle">Real experiences from verified gamers, video editors, students, and businesses.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "My ASUS ROG gaming laptop was hitting 98°C and throttling heavily in Cyberpunk. Sara Laptop performed a
+              full liquid-metal repasting and cleaned the radiators. Temps dropped to 79°C under full load! Best money
+              ever spent."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">MR</div>
+              <div>
+                <strong>Marcus R.</strong>
+                <span>ASUS ROG Strix G16 Owner • Liquid Metal Repaste</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "Brought in my MacBook Pro with a completely cracked screen at 10 AM, and it was ready for pickup by 3 PM
+              the same day! Color calibration matches factory Retina perfectly, and the price was half of what the Apple
+              Store quoted."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">SL</div>
+              <div>
+                <strong>Sarah Lin</strong>
+                <span>MacBook Pro 16 M1 Pro • Screen Replacement</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "Upgraded my Dell XPS from a 512GB SSD to a 2TB Samsung 990 Pro NVMe plus 32GB RAM. They cloned everything
+              in 50 minutes flat — all my coding environments, Docker containers, and browser tabs loaded without a single
+              hiccup."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">DK</div>
+              <div>
+                <strong>Devin K.</strong>
+                <span>Dell XPS 15 • 2TB NVMe Clone & 32GB RAM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Shop FAQ Accordion
+         ========================================================================== -->
+    <section class="shop-faq-section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Got Questions?</span>
+          <h2 class="section-title">Frequently Asked Questions About Our Shop</h2>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>Do I need an appointment or can I walk in directly?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Walk-ins are warmly welcome during all standard operating hours! However, reserving an online bench
+                ticket via our booking form gives you first priority in the technician queue and ensures compatible OEM
+                screens or batteries are held for your exact model.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>What is your warranty policy on repairs and replaced parts?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Every single repair and component replacement is covered by our comprehensive 90-day warranty (and up
+                to 180 days on selected Pro packages). If any replaced part malfunctions or demonstrates defects within
+                this period, we replace it free of charge.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>Will my personal documents and files remain completely safe?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Absolutely. We operate under strict data security protocols. For hardware repairs (screens, batteries,
+                fans, thermal repasting), your hard drive or SSD is never wiped. For drive cloning and OS reinstalls, we
+                create verified bit-by-bit image snapshots so zero data is lost.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>Can you fix a laptop that had coffee or water spilled on it?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes! We have an ultrasonic de-oxidation chemical tank specifically designed to dissolve corrosive salts
+                and sugars from motherboards. The critical factor is turning off the device immediately, disconnecting the
+                charger, and bringing it in within 24–48 hours for the highest recovery rate (88%+).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Return to Benchmark Reviews Callout Banner -->
+    <section class="shop-return-banner">
+      <div class="container">
+        <div class="return-banner-box">
+          <div class="return-banner-text">
+            <h3>Looking for In-Depth Laptop Reviews & Lab Benchmarks?</h3>
+            <p>Compare Cinebench 2024 scores, 150-nit battery rundowns, and FLIR thermal heatmaps on our main ByteBench review portal.</p>
+          </div>
+          <a href="index.html" class="btn-primary" style="padding: 0.85rem 1.8rem; font-size: 1rem;">
+            <span>← Return to Laptop Reviews</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Booking Confirmation Modal
+       ========================================================================== -->
+  <div class="modal-overlay" id="bookingReceiptModal" role="dialog" aria-modal="true" aria-labelledby="receiptModalTitle">
+    <div class="modal-container" style="max-width: 620px;">
+      <button class="modal-close-btn" id="bookingReceiptCloseBtn" aria-label="Close receipt modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="booking-receipt-content">
+        <div class="receipt-success-badge">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+
+        <h2 id="receiptModalTitle">Appointment Confirmed!</h2>
+        <p class="receipt-subtitle">Your bench diagnostic slot has been reserved at Sara Laptop Store.</p>
+
+        <div class="receipt-ticket-box">
+          <div class="ticket-top-row">
+            <span>Ticket Reference Number</span>
+            <strong class="ticket-code" id="receiptTicketCode">SARA-98421</strong>
+          </div>
+          <div class="ticket-details-grid">
+            <div class="ticket-field">
+              <span class="field-label">Customer Name</span>
+              <strong id="receiptCustomerName">Marcus R.</strong>
+            </div>
+            <div class="ticket-field">
+              <span class="field-label">Laptop Model</span>
+              <strong id="receiptLaptopModel">ASUS ROG Strix G16</strong>
+            </div>
+            <div class="ticket-field">
+              <span class="field-label">Selected Service</span>
+              <strong id="receiptService">Thermal Repasting & Cooling</strong>
+            </div>
+            <div class="ticket-field">
+              <span class="field-label">Appointment Time</span>
+              <strong id="receiptDateTime">Nov 02, 2026 (12:00 PM - 3:00 PM)</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="receipt-actions">
+          <a href="#" class="btn-primary" id="receiptWhatsAppBtn" target="_blank" rel="noopener noreferrer">
+            <span>Send Details to WhatsApp</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+            </svg>
+          </a>
+          <button class="btn-secondary" id="receiptPrintBtn">
+            <span>🖨️ Print Ticket</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- ==========================================================================
+       Site Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <div class="logo-wrapper">
+            <div class="logo-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="2" y1="20" x2="22" y2="20" />
+                <path d="M12 17v3" />
+              </svg>
+            </div>
+            <span>Sara<span class="text-gradient">Laptop</span> Shop</span>
+          </div>
+          <p>Certified hardware diagnostic laboratory and premier laptop repair shop. Genuine OEM parts, precision
+            thermal repasting, and ultra-fast NVMe/RAM expansions.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Hardware Diagnostics</a></li>
+            <li><a href="#services">RAM & NVMe Upgrades</a></li>
+            <li><a href="#services">Liquid Metal Repaste</a></li>
+            <li><a href="#services">Display Screen Replacement</a></li>
+            <li><a href="#services">OEM Battery Replacement</a></li>
+            <li><a href="#services">Spill & Ultrasonic Clean</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#hero">← Main Reviews Home</a></li>
+            <li><a href="index.html#reviews">Top Laptop Reviews</a></li>
+            <li><a href="index.html#quiz">Laptop Matchmaker Quiz</a></li>
+            <li><a href="#calculator">Instant Cost Estimator</a></li>
+            <li><a href="#packages">Service Packages</a></li>
+            <li><a href="#booking">Book Diagnostic Ticket</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Store Details</h4>
+          <ul class="footer-links">
+            <li><a href="#contact">Suite 402, Tech Arcade</a></li>
+            <li><a href="tel:+18005557272">+1 (800) 555-SARA</a></li>
+            <li><a href="#contact">Mon–Sat: 9:30AM – 8:30PM</a></li>
+            <li><a href="#faq">Warranty & Ethics</a></li>
+            <li><a href="#siteHeader">Back to Top ↑</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <span>© 2026 Sara Laptop Store & ByteBench Technologies. All rights reserved.</span>
+        <span>Independent Hardware Testing, Repairs & Lab Benchmarks.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/shop.js"></script>
+</body>
+
+</html>
+
